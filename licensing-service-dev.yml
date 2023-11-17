@@ -1,0 +1,29 @@
+exemple:
+    property: The dev config
+logging:
+    level:
+        web: debug
+management:
+    endpoint:
+        health:
+            enabled: true
+            show-details: always
+    endpoints:
+        enabled-by-default: false
+        web:
+            base-path: /
+    health:
+        db:
+            enabled: false
+        diskspace:
+            enabled: true
+server:
+    port: 8081
+spring:
+    datasource:
+        driver-class-name: org.postgresql.Driver
+        password: licensing
+        url: jdbc:postgresql://localhost:${DATABASE_SERVER_PORT}/licensing
+        username: licensing
+    profiles:
+        active: dev
