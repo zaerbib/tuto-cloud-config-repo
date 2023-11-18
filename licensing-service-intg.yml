@@ -1,3 +1,5 @@
+exemple:
+    property: The intg config
 logging:
     level:
         web: debug
